@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="INFO">
+	<Appenders>
+		<Console name="console" target="SYSTEM_OUT">
+			<PatternLayout pattern="[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1} - %msg%n" />
+		</Console>
+	</Appenders>
+	<Loggers>
+		<Root level="debug" additivity="false">
+			<AppenderRef ref="console" />
+		</Root>
+		<Logger name="com.azure" level="error" additivity="true">
+			<appender-ref ref="console" level="error" />
+		</Logger>
+		<Logger name="io.netty" level="info" additivity="true">
+			<appender-ref ref="console" level="info" />
+		</Logger>
+		<Logger name="reactor.netty" level="info" additivity="true">
+			<appender-ref ref="console" level="info" />
+		</Logger>
+	</Loggers>
+</Configuration>

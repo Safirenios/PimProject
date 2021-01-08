@@ -1,0 +1,211 @@
+[
+  {
+    "Id": "1075138",
+    "EntityType": "Product",
+    "CatalogId": "253313",
+    "DisplayName": {
+      "en": "Π.Υ. ΕΠΙΣΚΕΥΗ ΚΙΝΗΤΟΥ ΤΗΛ. SRV.C.",
+      "el": "Π.Υ. ΕΠΙΣΚΕΥΗ ΚΙΝΗΤΟΥ ΤΗΛ. SRV.C."
+    },
+    "DisplayDescription": {
+      "en": "990180"
+    },
+    "Fields": [
+      {
+        "Value": "990180",
+        "Type": "Simple",
+        "Name": "Number"
+      },
+      {
+        "Value": false,
+        "Type": "Simple",
+        "Name": "Inactive"
+      },
+      {
+        "Key": "00900",
+        "Value": "Υπηρεσίες ",
+        "Type": "List",
+        "Name": "MarketingBrand"
+      },
+      {
+        "Key": "10046861",
+        "Value": "Υπηρεσίες - Support 360",
+        "Type": "List",
+        "Name": "CategoryLevel1"
+      },
+      {
+        "Key": "10046901",
+        "Value": "Computing",
+        "Type": "List",
+        "Name": "CategoryLevel2"
+      },
+      {
+        "Value": false,
+        "Type": "Simple",
+        "Name": "LoanFlag"
+      },
+      {
+        "Value": false,
+        "Type": "Simple",
+        "Name": "FirstWindowsInstallationOnPCIsFree"
+      },
+      {
+        "Value": false,
+        "Type": "Simple",
+        "Name": "Eco"
+      },
+      {
+        "Key": "990601",
+        "Value": "Π.Υ ΕΠΙΣΚΕΥΗΣ ΑΓΑΘΩΝ",
+        "Type": "List",
+        "Name": "CategoryDXN"
+      },
+      {
+        "Values": [
+          {
+            "Key": "B2B",
+            "Value": "B2B - CRM dyn"
+          },
+          {
+            "Key": "B2C",
+            "Value": "HCL - Offline"
+          }
+        ],
+        "Type": "MultiList",
+        "Name": "Market"
+      },
+      {
+        "Value": "Π.Υ. ΕΠΙΣΚΕΥΗ ΚΙΝΗΤΟΥ ΤΗΛ. SRV.C.",
+        "ValueTranslations": {
+          "en": "Π.Υ. ΕΠΙΣΚΕΥΗ ΚΙΝΗΤΟΥ ΤΗΛ. SRV.C.",
+          "el": "Π.Υ. ΕΠΙΣΚΕΥΗ ΚΙΝΗΤΟΥ ΤΗΛ. SRV.C."
+        },
+        "Type": "Simple",
+        "Name": "Title"
+      },
+      {
+        "Key": "998",
+        "Value": "FRANCHISEE",
+        "Type": "List",
+        "Name": "StatusDXN"
+      },
+      {
+        "Value": "2020-11-25T11:00:00",
+        "Type": "Simple",
+        "Name": "CreationDateDXN"
+      },
+      {
+        "Key": "990601",
+        "Value": "990601",
+        "Type": "List",
+        "Name": "SubCategoryDXN"
+      },
+      {
+        "Value": false,
+        "Type": "Simple",
+        "Name": "SDSFlag"
+      },
+      {
+        "Value": false,
+        "Type": "Simple",
+        "Name": "SupplierDeliveryFlag"
+      },
+      {
+        "Value": false,
+        "Type": "Simple",
+        "Name": "CTAFlag"
+      },
+      {
+        "Value": false,
+        "Type": "Simple",
+        "Name": "SalesSetFlag"
+      },
+      {
+        "Value": false,
+        "Type": "Simple",
+        "Name": "OrderableFlag"
+      },
+      {
+        "Value": false,
+        "Type": "Simple",
+        "Name": "PreOrderFlag"
+      },
+      {
+        "Value": false,
+        "Type": "Simple",
+        "Name": "SanCastFlag"
+      },
+      {
+        "Value": 0.0,
+        "Type": "Simple",
+        "Name": "TechSpecCompleteness"
+      }
+    ],
+    "Relations": [
+      {
+        "RelationType": "ChannelNodeProducts",
+        "Id": "253340",
+        "EntityType": "ChannelNode"
+      }
+    ]
+  },
+  {
+    "Id": "1075139",
+    "EntityType": "Item",
+    "CatalogId": "253313",
+    "DisplayName": {
+      "en": "Π.Υ. ΕΠΙΣΚΕΥΗ ΚΙΝΗΤΟΥ ΤΗΛ. SRV.C.",
+      "el": "Π.Υ. ΕΠΙΣΚΕΥΗ ΚΙΝΗΤΟΥ ΤΗΛ. SRV.C."
+    },
+    "DisplayDescription": {
+      "en": "990180-001"
+    },
+    "Fields": [
+      {
+        "Key": "MM",
+        "Value": "MM",
+        "Type": "List",
+        "Name": "DimensionUnit"
+      },
+      {
+        "Value": "Π.Υ. ΕΠΙΣΚΕΥΗ ΚΙΝΗΤΟΥ ΤΗΛ. SRV.C.",
+        "ValueTranslations": {
+          "en": "Π.Υ. ΕΠΙΣΚΕΥΗ ΚΙΝΗΤΟΥ ΤΗΛ. SRV.C.",
+          "el": "Π.Υ. ΕΠΙΣΚΕΥΗ ΚΙΝΗΤΟΥ ΤΗΛ. SRV.C."
+        },
+        "Type": "Simple",
+        "Name": "Name"
+      },
+      {
+        "Value": "990180-001",
+        "Type": "Simple",
+        "Name": "Number"
+      },
+      {
+        "Key": "LT",
+        "Value": "LT",
+        "Type": "List",
+        "Name": "VolumeUnit"
+      },
+      {
+        "Key": "GR",
+        "Value": "GR",
+        "Type": "List",
+        "Name": "WeightUnit"
+      },
+      {
+        "Key": "990601",
+        "Value": "Π.Υ ΕΠΙΣΚΕΥΗΣ ΑΓΑΘΩΝ",
+        "Type": "List",
+        "Name": "DXNCategory"
+      }
+    ],
+    "Relations": [
+      {
+        "RelationType": "ProductItems",
+        "Id": "1075138",
+        "EntityType": "Product"
+      }
+    ]
+  }
+]
