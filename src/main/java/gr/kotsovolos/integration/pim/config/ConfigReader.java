@@ -38,6 +38,7 @@ public class ConfigReader {
 			ProcessorConfig processorCfg = new ProcessorConfig();
 			processorCfg.getNodeJSConfig().setNodeJSApllicationLocation(configProps.getProperty("node-application-location"));
 			processorCfg.getNodeJSConfig().setNodeJSApplicationName(configProps.getProperty("node-application-name"));
+			processorCfg.getNodeJSConfig().setNodeCommand(configProps.getProperty("node-command"));
 
 			config.setProcessorConfig(processorCfg);
 		}

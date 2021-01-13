@@ -52,6 +52,7 @@ public final class StepBuilder {
 			Objects.requireNonNull(config.getNodeJSConfig(), "ProcessorConfig.getNodeJSConfig() should not be null");
 			Objects.requireNonNull(config.getNodeJSConfig().getNodeJSApllicationLocation(), "ProcessorConfig.getNodeJSConfig().getNodeJSApllicationLocation() should not be null");
 			Objects.requireNonNull(config.getNodeJSConfig().getNodeJSApplicationName(), "ProcessorConfig.getNodeJSConfig().getNodeJSApplicationName() should not be null");
+			Objects.requireNonNull(config.getNodeJSConfig().getNodeCommand(), "ProcessorConfig.getNodeJSConfig().getNodeCommand() should not be null");
 			this.config = config;
 			return this;
 		}
