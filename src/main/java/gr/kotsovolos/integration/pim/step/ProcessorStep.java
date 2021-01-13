@@ -1,6 +1,7 @@
 package gr.kotsovolos.integration.pim.step;
 
 import java.io.File;
+import java.io.IOException;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -27,17 +28,21 @@ public class ProcessorStep implements Step {
 		String absoluteNodeJSPath = nodeJSApllicationLocation + File.separator + nodeJSApplicationName;
 		logger.info("Constructed absolute path for nodeJS app : {}", absoluteNodeJSPath);
 
-//		ProcessBuilder pb = new ProcessBuilder("node", "app.js");
-//		pb.redirectOutput(ProcessBuilder.Redirect.INHERIT);
-//		pb.redirectError(ProcessBuilder.Redirect.INHERIT);
-//		try {
-//			Process p = pb.start();
-//
-//			List<String> results = readOutput(p.getInputStream());
-//		} catch (IOException e) {
-//
-//			e.printStackTrace();
-//		}
+		ProcessBuilder pb = new ProcessBuilder("C:\\Program Files\\nodejs\\node.exe", absoluteNodeJSPath);
+		pb.redirectOutput(ProcessBuilder.Redirect.INHERIT);
+		pb.redirectError(ProcessBuilder.Redirect.INHERIT);
+		try {
+			Process p = pb.start();
+			int ret = p.waitFor();
+			System.err.println("Yolo " + ret);
+
+		} catch (IOException e) {
+
+			e.printStackTrace();
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 
 	}
 
